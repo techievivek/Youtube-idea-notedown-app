@@ -1,0 +1,18 @@
+ <div class="row">
+     <h5 class="center">Add a New Idea</h5>
+    <form class="col s12" method="POST" action="/idea/edit/{{idea.id}}?_method=PUT">
+       <div class="col s8 offset-s2">
+       <input type="text" name="title" id="" placeholder="Title..." value="{{idea.title}}">
+     </div>
+     <input type="hidden" name="_method" value="PUT">
+        <div class="input-field col s8 offset-s2">
+          <textarea id="textarea1" class="materialize-textarea" name="content">{{idea.details}}</textarea>
+          <label for="textarea1"></label>
+        </div>
+<div class="center col s12">
+      <div class="input-field">
+<input type="submit" value="Add The Idea" class="btn red">
+  </div>
+</div>
+    </form>
+  </div>

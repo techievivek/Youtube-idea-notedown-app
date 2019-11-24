@@ -1,0 +1,22 @@
+ {{#each errors}}
+ <div class="chip red">{{text}}</div>
+ {{else}}
+ {{/each}}
+ <div class="row">
+     <h5 class="center">Add a New Idea</h5>
+    <form class="col s12" method="POST" action="/idea/add">
+       <div class="col s8 offset-s2">
+       <input type="text" name="title" id="" placeholder="Title..." value="{{title}}">
+     </div>
+        <div class="input-field col s8 offset-s2">
+          <textarea id="textarea1" class="materialize-textarea" name="content">{{content}}</textarea>
+          <label for="textarea1">Add content</label>
+          
+        </div>
+<div class="center col s12">
+      <div class="input-field">
+<input type="submit" value="Add The Idea" class="btn red">
+  </div>
+</div>
+    </form>
+  </div>

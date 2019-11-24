@@ -1,0 +1,28 @@
+{{#each error}}
+<div class="chip red">
+<div class="chip red">{{text}}</div>
+<i class="material-icons close">close</i>
+</div>
+{{else}}
+{{/each}}
+<div class="row">
+<div class="col l6 offset-l3">
+    <div class="card-panel">
+        <h5 class="center">Signup to Get Started</h5>
+        <form action="/user/signup" method="POST">
+            <div class="input-field">
+            <input type="email" name="email" id="" placeholder="Email" value="{{user_data.email}}">
+        </div>
+          <div class="input-field">
+            <input type="text" name="username" id="" placeholder="Username" value="{{user_data.username}}">
+        </div>
+         <div class="input-field">
+            <input type="password" name="password" id="" placeholder="Password" value="{{user_data.password}}">
+        </div>
+        <div class="center">
+            <input type="submit" value="Signup" class="btn red">
+        </div>
+        </form>
+    </div>
+</div>
+</div>
