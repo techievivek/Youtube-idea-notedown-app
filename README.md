@@ -1,7 +1,8 @@
 # Youtube-idea-notedown-app
 It is a nodejs app to note down youtube video ideas to be made.
-## Frontend- Materialize css
-## Backend- Nodejs
+## Technology Stack
+- Frontend- Materialize css
+- Backend- Nodejs
 # Demo images
 ### Homepage
 ![Homepage](https://raw.githubusercontent.com/techievivek/Youtube-idea-notedown-app/master/videjot1.png)
